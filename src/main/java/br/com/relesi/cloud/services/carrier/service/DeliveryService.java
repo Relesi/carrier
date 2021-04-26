@@ -14,7 +14,8 @@ public class DeliveryService {
 	@Autowired
 	private DeliveryRepository repository;
 
-	public VoucherDTO reservaEntrega(DeliveryDTO deliveryDTO) {
+	//correct method syntax
+	public VoucherDTO reservationDelivery(DeliveryDTO deliveryDTO) {
 
 		Delivery delivery = new Delivery();
 

@@ -17,8 +17,9 @@ public class DeliveryController {
 	@Autowired
 	private DeliveryService deliveryService;
 
+	//correct method syntax
 	@RequestMapping(method = RequestMethod.POST)
 	public VoucherDTO reservationDelivery(@RequestBody DeliveryDTO deliveryDTO) {
-		return deliveryService.reservaEntrega(deliveryDTO);
+		return deliveryService.reservationDelivery(deliveryDTO);
 	}
 }
