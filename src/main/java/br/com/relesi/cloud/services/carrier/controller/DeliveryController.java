@@ -13,11 +13,10 @@ import br.com.relesi.cloud.services.carrier.service.DeliveryService;
 @RestController
 @RequestMapping("/delivery")
 public class DeliveryController {
-	
+
 	@Autowired
 	private DeliveryService deliveryService;
 
-	//correct method syntax
 	@RequestMapping(method = RequestMethod.POST)
 	public VoucherDTO reservationDelivery(@RequestBody DeliveryDTO deliveryDTO) {
 		return deliveryService.reservationDelivery(deliveryDTO);

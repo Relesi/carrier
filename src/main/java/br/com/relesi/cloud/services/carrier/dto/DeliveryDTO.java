@@ -44,6 +44,4 @@ public class DeliveryDTO {
 		this.destinationAddress = destinationAddress;
 	}
 
-
-
 }
