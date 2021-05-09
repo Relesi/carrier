@@ -14,16 +14,16 @@ public class DeliveryService {
 	@Autowired
 	private DeliveryRepository repository;
 
-	//correct method syntax
+	// correct method syntax
 	public VoucherDTO reservationDelivery(DeliveryDTO deliveryDTO) {
 
 		Delivery delivery = new Delivery();
 
-//		delivery.setDateForSearch(deliveryDTO.getDateForDelivery());
-//		delivery.setDeliveryScheduled(deliveryDTO.getDateForDelivery().plusDays(1l));
-//		delivery.setDestinationAddress(deliveryDTO.getDestinationAddress());
-//		delivery.setOriginAddress(deliveryDTO.getOriginAddress());
-//		delivery.setOrderId(deliveryDTO.getOrderId());
+		delivery.setDateForSearch(deliveryDTO.getDateForDelivery());
+		delivery.setDeliveryScheduled(deliveryDTO.getDateForDelivery().plusDays(1l));
+		delivery.setDestinationAddress(deliveryDTO.getDestinationAddress());
+		delivery.setOriginAddress(deliveryDTO.getOriginAddress());
+		delivery.setOrderId(deliveryDTO.getOrderId());
 
 		repository.save(delivery);
 
